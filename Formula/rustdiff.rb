@@ -68,7 +68,9 @@ class Rustdiff < Formula
       </plist>
     PLIST
 
-    svg = "data/icons/com.digitalgex.RustDiff.svg"
+    # El SVG ya fue movido (install = move) a share/icons más arriba;
+    # usar esa ruta, no la del árbol de fuentes.
+    svg = share/"icons/hicolor/scalable/apps/com.digitalgex.RustDiff.svg"
     iconset = buildpath/"rustdiff.iconset"
     iconset.mkpath
     rsvg = Formula["librsvg"].opt_bin/"rsvg-convert"
