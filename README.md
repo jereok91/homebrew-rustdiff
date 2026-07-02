@@ -15,6 +15,16 @@ Or in one step:
 brew install jereok91/rustdiff/rustdiff
 ```
 
+## Launchpad (macOS)
+
+The formula builds a `RustDiff.app` wrapper. To make it show up in Launchpad and Spotlight, copy it once to `/Applications`:
+
+```sh
+cp -R "$(brew --prefix)/opt/rustdiff/RustDiff.app" /Applications/
+```
+
+The bundle launches the brew-managed binary, so it keeps working after `brew upgrade` without copying it again.
+
 ## Notes
 
 - Builds from source; requires the GTK4 stack (`gtk4`, `libadwaita`, `gtksourceview5`), installed automatically as dependencies.
