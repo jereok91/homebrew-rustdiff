@@ -4,26 +4,14 @@ Homebrew tap for [RustDiff](https://github.com/jereok91/rustdiff) — semantic J
 
 ## Install
 
-```sh
-brew tap jereok91/rustdiff
-brew install rustdiff
-```
-
-Or in one step:
+Install RustDiff and add it to Launchpad with two commands:
 
 ```sh
 brew install jereok91/rustdiff/rustdiff
-```
-
-## Launchpad (macOS)
-
-The formula builds a `RustDiff.app` wrapper. To make it show up in Launchpad and Spotlight, copy it once to `/Applications`:
-
-```sh
 cp -R "$(brew --prefix)/opt/rustdiff/RustDiff.app" /Applications/
 ```
 
-The bundle launches the brew-managed binary, so it keeps working after `brew upgrade` without copying it again.
+The second command makes the app show up in Launchpad and Spotlight (macOS). It is needed only once: the bundle launches the brew-managed binary, so it keeps working after `brew upgrade` without copying it again.
 
 ## Notes
 
