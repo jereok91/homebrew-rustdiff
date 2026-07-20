@@ -1,9 +1,9 @@
 cask "rustdiff-app" do
-  version "0.2.2"
+  version "0.3.0"
 
   arch arm: "arm64", intel: "x86_64"
-  sha256 arm:   "892ddb6762abdc8f8dc7d9150d5031e2ed09eebb8fb1973e17a19775fb7ca58b",
-         intel: "f1fee31ea11cb3b76a75a8d9cade5b178699ac8c3f6ec550da09de1bcad8449c"
+  sha256 arm:   "15cd19078a9604e53d63d5bf9a9f90b8217fe79968a75ec4dbbe249f7c88b947",
+         intel: "4e78b75063297494ca1264724f2bd05996c9c644721fbdb0b176050cbcbf22f1"
 
   url "https://github.com/jereok91/rustdiff/releases/download/v#{version}/RustDiff-#{version}-macos-#{arch}.dmg"
   name "RustDiff"
