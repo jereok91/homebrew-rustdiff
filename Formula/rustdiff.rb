@@ -1,8 +1,8 @@
 class Rustdiff < Formula
   desc "Semantic JSON & XML diff tool with a native GTK4 desktop UI"
   homepage "https://github.com/jereok91/rustdiff"
-  url "https://github.com/jereok91/rustdiff/archive/refs/tags/v0.3.3.tar.gz"
-  sha256 "ab40ab0f75b3d3475c6e137b6e6e3ee44e03cb97f3dc17a39622b0415bd1ec90"
+  url "https://github.com/jereok91/rustdiff/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "dad7545ea3a75dc72a355c04e61727de204363a9e35916110db530fc46084987"
   license "GPL-3.0-or-later"
   head "https://github.com/jereok91/rustdiff.git", branch: "main"
 
