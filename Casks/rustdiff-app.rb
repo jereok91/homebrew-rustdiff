@@ -1,13 +1,13 @@
 cask "rustdiff-app" do
-  version "0.4.0"
+  version "1.0.0"
 
   arch arm: "arm64", intel: "x86_64"
-  sha256 arm:   "03e14a0fa938ca42a4d1f0ab4951b5cac0f571d6503788f86dfbe807dcd9a310",
-         intel: "df7ef1d532301e0413e7de382e7a542567be28bfedd9ff386eca1c9eec75782d"
+  sha256 arm:   "1a02c681d593978097fdaa2c292780658f55c492f432889547b5ba805a452ce5",
+         intel: "4ac013d2f799f24e5fdca53f9504b886665f7ceef648843a7ffe95e967730ca3"
 
   url "https://github.com/jereok91/rustdiff/releases/download/v#{version}/RustDiff-#{version}-macos-#{arch}.dmg"
   name "RustDiff"
-  desc "Semantic JSON/XML/SQL diff tool with a native GTK4 desktop UI"
+  desc "Semantic JSON/XML/SQL diff tool"
   homepage "https://github.com/jereok91/rustdiff"
 
   app "RustDiff.app"
@@ -21,8 +21,9 @@ cask "rustdiff-app" do
   CAVEATS
 
   zap trash: [
-    "~/.config/rustdiff",
-    "~/.local/share/rustdiff",
+    "~/Library/Application Support/rustdiff",
+    "~/Library/Application Support/com.digitalgex.RustDiff",
     "~/Library/Caches/com.digitalgex.RustDiff",
+    "~/Library/WebKit/com.digitalgex.RustDiff",
   ]
 end
